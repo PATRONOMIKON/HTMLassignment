@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Gaming Basics</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Resident Evil: Revolutionary video game series</h1>
-        <h2>Introduction to Resident Evil</h2>
+    <header id="main-header">
+        <h1 class="section-title">Resident Evil: Revolutionary Video Game Series</h1>
+        <h2 class="section-subtitle">Introduction to Resident Evil</h2>
     </header>
 
-    <!-- Main contains -->
-    <main>
+    <main class="flex-container">
 
-        <!-- Section organizes related content -->
-        <section>
-            <h3>The story of Resident Evil?</h3>
+        <section class="content-box">
+            <h3 class="section-title">The Story of Resident Evil</h3>
 
-            <!-- Paragraph explaining gaming -->
             <p>
                 Resident Evil is a video game series created by Capcom that began in 1996. The first
                 game is set in a mansion near Raccoon City, where players control special agents
@@ -33,32 +30,28 @@
             </p>
         </section>
 
-        <section>
-            <h3>Main Features of the Series</h3>
+        <section class="content-box">
+            <h3 class="section-title">Main Features of the Series</h3>
 
-            <!-- Unordered list -->
-            <ul>
+            <ul class="feature-list">
                 <li>Survival horror gameplay</li>
                 <li>Limited ammo and resources</li>
                 <li>Puzzle solving</li>
                 <li>Strong storytelling</li>
             </ul>
+
+            <img class="character-img" src="images/Leon.png" alt="Leon S. Kennedy from Resident Evil" width="250">
+
+            <p>
+                <a class="page-link" href="page2.html">Read more on Page 2 →</a>
+            </p>
         </section>
-
-        <!-- Image using relative path with alt and width -->
-        <img src="images/Leon.png" alt="Leon S. Kennedy from Resident Evil" width="300">
-
-        <!-- Internal link to second page -->
-        <p>
-            <a href="page2.html">Read more on Page 2</a>
-        </p>
 
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>
-            <a href="page2.html">Go to Page 2</a>
+    <footer id="main-footer">
+        <p class="footer-text">
+            <a class="page-link" href="page2.html">Go to Page 2</a>
         </p>
     </footer>
 

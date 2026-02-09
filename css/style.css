@@ -73,3 +73,15 @@ p {
 .footer-text a {
   color: white;
 }
+
+.game-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.game-img {
+  width: 60px;
+  border-radius: 4px;
+}
