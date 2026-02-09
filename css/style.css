@@ -15,3 +15,61 @@ p {
   margin: 0 auto 1rem auto;
   color: #333;
 }
+
+/* FLEXBOX LAYOUT */
+.flex-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* CLASSES */
+.section-title {
+  color: #b30000;
+}
+
+.section-subtitle {
+  font-style: italic;
+}
+
+.content-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  width: 45%;
+}
+
+.feature-list, .game-list {
+  padding-left: 1.5rem;
+}
+
+.character-img {
+  display: block;
+  margin: 1rem auto;
+}
+
+.page-link {
+  text-decoration: none;
+  color: #b30000;
+  font-weight: bold;
+}
+
+/* IDS */
+#main-header {
+  background-color: #111;
+  color: white;
+  padding: 1.5rem;
+}
+
+#main-footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-text a {
+  color: white;
+}
