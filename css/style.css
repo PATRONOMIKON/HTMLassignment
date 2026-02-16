@@ -13,10 +13,9 @@ h1, h2, h3 {
 p {
   max-width: 700px;
   margin: 0 auto 1rem auto;
-  color: #333;
+  color: #222;
 }
 
-/* FLEXBOX LAYOUT */
 .flex-container {
   display: flex;
   gap: 2rem;
@@ -24,9 +23,8 @@ p {
   padding: 2rem;
 }
 
-/* CLASSES */
 .section-title {
-  color: #b30000;
+  color: #990000;
 }
 
 .section-subtitle {
@@ -41,22 +39,34 @@ p {
   width: 45%;
 }
 
-.feature-list, .game-list {
+.feature-list, 
+.game-list {
   padding-left: 1.5rem;
 }
 
 .character-img {
   display: block;
   margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.game-img {
+  width: 60px;
+  border-radius: 4px;
 }
 
 .page-link {
   text-decoration: none;
-  color: #b30000;
+  color: #990000;
   font-weight: bold;
 }
 
-/* IDS */
+.page-link:hover,
+.page-link:focus {
+  text-decoration: underline;
+}
+
 #main-header {
   background-color: #111;
   color: white;
@@ -81,7 +91,28 @@ p {
   margin-bottom: 1rem;
 }
 
-.game-img {
-  width: 60px;
-  border-radius: 4px;
+a:focus {
+  outline: 3px solid #ffcc00;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-box {
+    width: 90%;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .game-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
