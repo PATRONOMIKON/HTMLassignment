@@ -4,73 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaming Basics | Resident Evil Series</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header id="main-header">
-        <h1>Resident Evil: Revolutionary Video Game Series</h1>
+    <header id="main-header" class="py-4">
+        <div class="container">
+            <h1 class="text-center">Resident Evil: Revolutionary Video Game Series</h1>
 
-        <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page2.html">Resident Evil's Impact</a></li>
-            </ul>
-        </nav>
+            <nav class="mt-3">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="page2.html">Resident Evil's Impact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="flex-container">
+    <main class="container my-5">
 
-        <section class="content-box">
-            <h2>Introduction to Resident Evil</h2>
+        <div class="row g-4">
 
-            <h3>The Story of Resident Evil</h3>
+            <section class="col-md-6">
+                <div class="content-box h-100">
+                    <h2 class="mb-3">Introduction to Resident Evil</h2>
 
-            <p>
-                Resident Evil is a survival horror video game series created by Capcom that began in 1996. 
-                The first game is set in a mansion near Raccoon City, where players control special agents 
-                investigating mysterious murders.
-            </p>
+                    <h3>The Story of Resident Evil</h3>
 
-            <p>
-                Inside the mansion, players discover that a company called Umbrella Corporation created a 
-                deadly virus that turns people into zombies. The story focuses on survival, mystery, and 
-                escaping while uncovering the truth behind the outbreak.
-            </p>
-        </section>
+                    <p>
+                        Resident Evil is a survival horror video game series created by Capcom that began in 1996. 
+                        The first game is set in a mansion near Raccoon City, where players control special agents 
+                        investigating mysterious murders.
+                    </p>
 
-        <section class="content-box">
-            <h2>Main Features of the Series</h2>
+                    <p>
+                        Inside the mansion, players discover that a company called Umbrella Corporation created a 
+                        deadly virus that turns people into zombies. The story focuses on survival, mystery, and 
+                        escaping while uncovering the truth behind the outbreak.
+                    </p>
+                </div>
+            </section>
 
-            <ul class="feature-list">
-                <li>Survival horror gameplay</li>
-                <li>Limited ammo and resources</li>
-                <li>Puzzle solving</li>
-                <li>Strong storytelling</li>
-            </ul>
+            <section class="col-md-6">
+                <div class="content-box h-100">
+                    <h2 class="mb-3">Main Features of the Series</h2>
 
-            <img 
-                class="character-img" 
-                src="images/Leon.png" 
-                alt="Leon S. Kennedy holding a handgun in Resident Evil 4 promotional artwork" 
-                width="250"
-            >
+                    <ul class="feature-list">
+                        <li>Survival horror gameplay</li>
+                        <li>Limited ammo and resources</li>
+                        <li>Puzzle solving</li>
+                        <li>Strong storytelling</li>
+                    </ul>
 
-            <p>
-                <a class="page-link" href="page2.html">
-                    Learn more about Resident Evil's impact on gaming →
-                </a>
-            </p>
-        </section>
+                    <img 
+                        class="character-img img-fluid rounded mx-auto d-block my-3" 
+                        src="images/Leon.png" 
+                        alt="Leon S. Kennedy holding a handgun in Resident Evil 4 promotional artwork"
+                        width="250"
+                    >
+
+                    <a class="btn btn-danger mt-3" href="page2.html">
+                        Learn more about Resident Evil's impact →
+                    </a>
+                </div>
+            </section>
+
+        </div>
 
     </main>
 
-    <footer id="main-footer">
-        <p>
-            <a class="page-link" href="page2.html">
+    <footer id="main-footer" class="py-3">
+        <div class="container text-center">
+            <a class="page-link btn btn-outline-light" href="page2.html">
                 Explore how Resident Evil changed the gaming industry
             </a>
-        </p>
+        </div>
     </footer>
 
 </body>
