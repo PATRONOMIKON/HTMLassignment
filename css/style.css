@@ -16,12 +16,8 @@ p {
   color: #222;
 }
 
-.flex-container {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  padding: 2rem;
-}
+/* Removed flex-container since Bootstrap handles rows and columns */
+/* .flex-container { display: flex; gap: 2rem; justify-content: center; padding: 2rem; } */
 
 .section-title {
   color: #990000;
@@ -36,11 +32,11 @@ p {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-  width: 45%;
+  /* width handled by Bootstrap columns */
+  height: 100%;
 }
 
-.feature-list, 
-.game-list {
+.feature-list {
   padding-left: 1.5rem;
 }
 
@@ -70,24 +66,16 @@ p {
 #main-header {
   background-color: #111;
   color: white;
-  padding: 1.5rem;
 }
 
 #main-footer {
   background-color: #111;
   color: white;
   text-align: center;
-  padding: 1rem;
-}
-
-.footer-text a {
-  color: white;
 }
 
 .game-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  /* Removed flex rules, now handled by Bootstrap utilities */
   margin-bottom: 1rem;
 }
 
@@ -96,23 +84,9 @@ a:focus {
   outline-offset: 2px;
 }
 
+/* Media query adjustments mostly handled by Bootstrap, keep for extra control */
 @media (max-width: 768px) {
-
-  .flex-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .content-box {
-    width: 90%;
-  }
-
   body {
     font-size: 16px;
-  }
-
-  .game-item {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
