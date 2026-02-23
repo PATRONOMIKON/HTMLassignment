@@ -4,91 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resident Evil Impact on Gaming</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header id="main-header">
-        <h1>Resident Evil's Impact on Gaming</h1>
+    <header id="main-header" class="py-4">
+        <div class="container">
+            <h1 class="text-center">Resident Evil's Impact on Gaming</h1>
 
-        <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page2.html">Impact</a></li>
-            </ul>
-        </nav>
+            <nav class="mt-3">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="page2.html">Impact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="flex-container">
+    <main class="container my-5">
 
-        <section class="content-box">
-            <h2>How Resident Evil Revolutionized Gaming</h2>
+        <div class="row g-4">
 
-            <p>
-                Resident Evil helped define the survival horror genre by focusing on tension, fear, 
-                and limited resources. Instead of constant action, the game required players to 
-                think strategically and manage what they had.
-            </p>
+            <section class="col-md-6">
+                <div class="content-box h-100">
+                    <h2>How Resident Evil Revolutionized Gaming</h2>
 
-            <p>
-                The cinematic camera angles and immersive atmosphere made players feel like they 
-                were inside a horror movie. This design approach influenced many future games and 
-                demonstrated that video games could create powerful emotional experiences.
-            </p>
-        </section>
+                    <p>
+                        Resident Evil helped define the survival horror genre by focusing on tension, fear, 
+                        and limited resources. Instead of constant action, the game required players to 
+                        think strategically and manage what they had.
+                    </p>
 
-        <section class="content-box">
-            <h2>Five Important Resident Evil Games</h2>
+                    <p>
+                        The cinematic camera angles and immersive atmosphere made players feel like they 
+                        were inside a horror movie. This design approach influenced many future games and 
+                        demonstrated that video games could create powerful emotional experiences.
+                    </p>
+                </div>
+            </section>
 
-            <ol class="game-list">
+            <section class="col-md-6">
+                <div class="content-box h-100">
+                    <h2>Five Important Resident Evil Games</h2>
 
-                <li class="game-item">
-                    <img src="images/RE1.png" 
-                         alt="Cover art of Resident Evil 1996 showing Chris Redfield holding a weapon"
-                         class="game-img">
-                    <span>Resident Evil (1996)</span>
-                </li>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="images/RE1.png" alt="Cover art of Resident Evil 1996 showing Chris Redfield holding a weapon" class="game-img me-3">
+                            <span>Resident Evil (1996)</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="images/RE2.jpg" alt="Resident Evil 2 cover art featuring Leon S. Kennedy and Claire Redfield" class="game-img me-3">
+                            <span>Resident Evil 2</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="images/RE4.jpg" alt="Resident Evil 4 cover art showing Leon S. Kennedy in a dark forest" class="game-img me-3">
+                            <span>Resident Evil 4</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="images/RE7.jpg" alt="Resident Evil 7 Biohazard cover art featuring a haunted house" class="game-img me-3">
+                            <span>Resident Evil 7</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="images/RE8.png" alt="Resident Evil Village cover art showing Ethan Winters and Chris Redfield" class="game-img me-3">
+                            <span>Resident Evil Village</span>
+                        </li>
+                    </ul>
 
-                <li class="game-item">
-                    <img src="images/RE2.jpg" 
-                         alt="Resident Evil 2 cover art featuring Leon S. Kennedy and Claire Redfield"
-                         class="game-img">
-                    <span>Resident Evil 2</span>
-                </li>
+                </div>
+            </section>
 
-                <li class="game-item">
-                    <img src="images/RE4.jpg" 
-                         alt="Resident Evil 4 cover art showing Leon S. Kennedy in a dark forest"
-                         class="game-img">
-                    <span>Resident Evil 4</span>
-                </li>
-
-                <li class="game-item">
-                    <img src="images/RE7.jpg" 
-                         alt="Resident Evil 7 Biohazard cover art featuring a haunted house"
-                         class="game-img">
-                    <span>Resident Evil 7</span>
-                </li>
-
-                <li class="game-item">
-                    <img src="images/RE8.png" 
-                         alt="Resident Evil Village cover art showing Ethan Winters and Chris Redfield"
-                         class="game-img">
-                    <span>Resident Evil Village</span>
-                </li>
-
-            </ol>
-
-        </section>
+        </div>
 
     </main>
 
-    <footer id="main-footer">
-        <p>
-            <a class="page-link" href="index.html">
+    <footer id="main-footer" class="py-3">
+        <div class="container text-center">
+            <a class="page-link btn btn-outline-light" href="index.html">
                 Return to the Resident Evil homepage
             </a>
-        </p>
+        </div>
     </footer>
 
 </body>
