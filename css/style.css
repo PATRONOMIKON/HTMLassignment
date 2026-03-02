@@ -16,9 +16,6 @@ p {
   color: #222;
 }
 
-/* Removed flex-container since Bootstrap handles rows and columns */
-/* .flex-container { display: flex; gap: 2rem; justify-content: center; padding: 2rem; } */
-
 .section-title {
   color: #990000;
 }
@@ -32,7 +29,6 @@ p {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-  /* width handled by Bootstrap columns */
   height: 100%;
 }
 
@@ -56,10 +52,12 @@ p {
   text-decoration: none;
   color: #990000;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .page-link:hover,
 .page-link:focus {
+  color: #ff0000;
   text-decoration: underline;
 }
 
@@ -74,17 +72,25 @@ p {
   text-align: center;
 }
 
-.game-item {
-  /* Removed flex rules, now handled by Bootstrap utilities */
-  margin-bottom: 1rem;
-}
-
 a:focus {
   outline: 3px solid #ffcc00;
   outline-offset: 2px;
 }
 
-/* Media query adjustments mostly handled by Bootstrap, keep for extra control */
+.btn-danger {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   body {
     font-size: 16px;
